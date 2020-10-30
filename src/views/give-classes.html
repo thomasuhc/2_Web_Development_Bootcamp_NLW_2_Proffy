@@ -72,17 +72,13 @@
 
                         <select name="subject" id="subject" required>
 
-                            <option value="">Selecione opcao</option>
-                            <option value="1">Artes</option>
-                            <option value="2">Biologia</option>
-                            <option value="3">Ciencias</option>
-                            <option value="4">Educacao fisica</option>
-                            <option value="5">Fisica</option>
-                            <option value="6">Geografia</option>
-                            <option value="7">Historia</option>
-                            <option value="8">Matematica</option>
-                            <option value="9">Portugues</option>
-                            <option value="10">Quimica</option>
+                            <option value="">Selecione a materia</option>
+                          
+                            {% for subject in subjects %}
+
+                            <option value="{{loop.index}}">{{subject}}</option>
+
+                            {% endfor %}
 
                         </select>
 
@@ -90,7 +86,7 @@
 
                     <div class="input-block">
                         <label for="cost">Custo da sua hora/aula<small>(R$)</small></label>
-                        <input type="cost" id="cost" type="number" required>
+                        <input name="cost" type="cost" id="cost" type="number" required>
                     
                     </div>
                 </fieldset>
@@ -106,13 +102,14 @@
                         <div class="select-block">
                             <label for="weekday">Dia da semana</label>
                             <select name="weekday[]" required>
-                                <option value="0">Domingo</option>
-                                <option value="1">Segunda-feira</option>
-                                <option value="2">Terca-feira</option>
-                                <option value="3">Quarta-feira</option>
-                                <option value="4">Quinta-feira</option>
-                                <option value="5">Sexta-feira</option>
-                                <option value="6">Sabado</option>
+
+                                <option value="">Selecione o dia</option>
+                               
+                                {% for weekday in weekdays %}
+
+                                <option value="{{loop.index0}}">{{weekday}}</option>
+
+                                {% endfor %}
 
                             </select>
                         </div>

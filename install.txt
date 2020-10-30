@@ -1,0 +1,48 @@
+npm init
+
+https://expressjs.com/en/starter/installing.html
+npm install express
+
+
+https://expressjs.com/en/starter/hello-world.html
+
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+})
+
+
+app.listen(port, () => {
+    console.log(`Example app listening at http://localhost:${3000}`)
+  })
+
+---------------------------------------------------------------------------------
+  app.get('/', (req, res) => {
+  res.send('Hello World!');
+}).listen(3000)
+
+=================================================================================
+
+https://www.npmjs.com/package/nodemon
+
+npm install nodemon -D
+
+npm run dev
+
+
+https://www.npmjs.com/package/nunjucks
+npm install nunjucks
+
+
+
+
+
+
+
+=================================================================================
+If your computer's system prefs are set to use a 24-hour clock, the browser will render the <input type="time"> element as --:-- (time range: 00:00–23:59).
+
+If you change your computer's syst prefs to use 12-hour, the output won't change until you quit and relaunch the browser. Then it will change to --:-- -- (time range: 12:00 AM – 11:59 PM)

@@ -1,0 +1,18 @@
+{
+  "name": "2_web_development_bootcamp_nlw_2_proffy",
+  "version": "1.0.0",
+  "description": "NLW Bootcamp 2",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "author": "Chu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
