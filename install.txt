@@ -37,8 +37,11 @@ https://www.npmjs.com/package/nunjucks
 npm install nunjucks
 
 
+https://www.npmjs.com/package/sqlite-async
 
+Stop nodemon before install
 
+npm install sqlite-async
 
 
 
