@@ -43,6 +43,10 @@ Stop nodemon before install
 
 npm install sqlite-async
 
+node src/database/db.js
+
+Install vscode extension "SQLite" to view database "database.sqlite"
+
 
 
 =================================================================================
